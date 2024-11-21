@@ -1,0 +1,8 @@
+services:
+
+  builder:
+    image: mcr.microsoft.com/devcontainers/typescript-node
+    working_dir: /app/
+    volumes:
+      - ./frontend/:/app/
+    command: npm run build
